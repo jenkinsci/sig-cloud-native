@@ -1,4 +1,4 @@
-# sig-cloud-native
+# Jenkins Cloud Native SIG
 
 ## Quick links
 
