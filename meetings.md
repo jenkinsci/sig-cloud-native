@@ -7,9 +7,13 @@
 * [Meeting Recordings](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
 * Jenkins Roadmap: https://www.jenkins.io/project/roadmap/
 * [Agenda and Notes](#Agenda-and-Notes)
-    * [2021-02-12 Meeting](#February-12-2021)
-    * [2021-02-05 Meeting](#February-5-2021)
+    * [2021-03-5 Meeting](#March-05-2021)
     * [2021-02-26 Meeting](#February-26-2021)
+    * [2021-02-12 Meeting](#February-12-2021)
+    * [2021-02-5 Meeting](#February-5-2021)
+    * [2021-01-29 Meeting](#January-27-2021)
+    * [2021-01-22 Meeting](#January-22-2021)
+    * [2021-01-15 Meeting](#January-15-2021)
    
 
 ## Logistics
@@ -28,6 +32,27 @@ Meeting agenda and notes are kept on [HackMD.io](https://hackmd.io/7uB6FuEqQAOp_
 If you are looking for 2020 minutes of meetings, please take a look at [2020 Meeting Minutes document](https://docs.google.com/document/d/13zeaKgtud5jZ5RqZEh1lrwjDXJRm7j31scPymlrMpfo/edit#heading=h.jlsdrmbt2n8j), which is a Google doc containing past meeting minutes.
 
 :::
+
+### March 5, 2021
+
+#### Participants
+* Kara de la Marck
+* Gareth Evans
+* <add your name>
+
+
+#### Agenda and Notes
+* Add Support for Tekton Catalog to Tekton Client Plugin: https://github.com/jenkinsci/tekton-client-plugin/pull/58
+    * Woohoo! 
+    * How does this impact potential GSoC student projects?
+    * https://github.com/jenkinsci/tekton-client-plugin/blob/master/roadmap.md
+* Dina Graves Portman will present the 4 Key Framework to the Interoperability SIG on 18 March.
+    * Link to her presentation and demo at cdCon, Measuring DevOps: https://www.youtube.com/watch?v=rbenCqQCa-4&feature=youtu.be
+* CDF Events SIG is now on!
+    * https://github.com/cdfoundation/sig-events
+    * Meetings are open, meeting info on the above link
+    * Excellent reference and resource for our work. 
+
 
 ### February 26, 2021
 
@@ -64,8 +89,9 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 #### Action Items
 * All: Review and provide feedback on GSOC Tekton Client Plugin  https://docs.google.com/document/d/1_mS0gLgM7oz7PanE0X_SkJ8iUo-BPVCixXMSDO7-VMk/edit#heading=h.vn4ec3wsbisx
-* 
-
+ 
+#### Meeting Recording
+* https://www.youtube.com/watch?v=AknUZ0KV_xg&list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG&index=11
 
 ### February 5, 2021
 
@@ -81,7 +107,6 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 * Jenkins Kubernetes Operator:Open Governance, Trademarks, planning of the next steps
 https://groups.google.com/g/jenkinsci-dev/c/OA5nb_SAgh0/m/GrbA8r63BQAJ 
 * Cloud Native SIG to help develop technical roadmap for Jenkins K8s Operator
-* 
 
 #### Action Items
 * Kara to find out information on becoming Jenkins Sub-Project. Understand Jenkins Enhancement Proposal, work with Jenkins Governance Board.
@@ -107,36 +132,94 @@ https://groups.google.com/g/jenkinsci-dev/c/OA5nb_SAgh0/m/GrbA8r63BQAJ
 #### Agenda and Notes
 * Action Item Review, All
 * Open items from previous meeting:
-CloudEvents metadata 
-CloudEvents SDK -- excellent to explore and use to understand CloudEvents better. Do not need K8s knowledge to get started with this. GSoC students interested in CloudEvents plugin proposal, may find this a good initial step to understanding the proposed project.
-Need to find endpoints that can be subscribed to. Related to consuming endpoints.
-How would we consume CloudEvents => convert to Jenkins metadata?
-Gareth: initially could be a webhook handler that we post CloudEvents to.
+* CloudEvents metadata 
+CloudEvents SDK -- excellent to explore and use to understand CloudEvents better. 
+    * Do not need K8s knowledge to get started with this. GSoC students interested in CloudEvents plugin proposal, may find this a good initial step to understanding the proposed project.
+    * Need to find endpoints that can be subscribed to. Related to consuming endpoints.
+    * How would we consume CloudEvents => convert to Jenkins metadata?
+    * Gareth: initially could be a webhook handler that we post CloudEvents to.
 Plugins out there that have similar functionality -- good to look into (see Vibhav action item below)
-
-First prototype to understand how CloudEvents work, from producer point of view: 
+* First prototype to understand how CloudEvents work, from producer point of view: 
 create (poc) global plugin configuration for Jenkins
-
-Github-autostatus-plugin-- reports events for stage changes/promotions: https://github.com/jenkinsci/github-autostatus-plugin
-Gareth: would be interesting to consider how it is listening to the Jenkins internals
-
-Figure out extent to which to bootstrap the CloudEvents plugin project for GSoC students:
- Possibly need to bootstrap the global plugin configuration. 
-
-[GSOC Tekton Client Plugin](https://docs.google.com/document/d/1_mS0gLgM7oz7PanE0X_SkJ8iUo-BPVCixXMSDO7-VMk/edit#heading=h.vn4ec3wsbisx)  -- read over, review, give feedback
-		
-Action items:
-Vibhav: Metadata table 
-Vibhav: Look at generic-webhook-trigger for understanding basis for consuming cloudevents
-Vibhav: Github-autostatus-plugin
-Create doc for Cloudevents Metadata Table for Jenkins
-Research on Tekton-asa-code:  https://github.com/chmouel/tekton-asa-code
-How would this work with Tekton Client Plugin. May want to research and look at Lighthouse and how it is implemented. 
-
-
-
+* Github-autostatus-plugin-- reports events for stage changes/promotions: https://github.com/jenkinsci/github-autostatus-plugin
+    * Gareth: would be interesting to consider how it is listening to the Jenkins internals
+* Figure out extent to which to bootstrap the CloudEvents plugin project for GSoC students: Possibly need to bootstrap the global plugin configuration. 
 
 #### Action Items
+* All: [GSOC Tekton Client Plugin](https://docs.google.com/document/d/1_mS0gLgM7oz7PanE0X_SkJ8iUo-BPVCixXMSDO7-VMk/edit#heading=h.vn4ec3wsbisx)  -- read over, review, give feedback
+* Vibhav: Metadata table 
+* Vibhav: Look at generic-webhook-trigger for understanding basis for consuming cloudevents
+* Vibhav: Github-autostatus-plugin
+* Create doc for Cloudevents Metadata Table for Jenkins
+* Research on Tekton-asa-code:  https://github.com/chmouel/tekton-asa-code
+    * How would this work with Tekton Client Plugin. May want to research and look at Lighthouse and how it is implemented. 
 
 
 #### Meeting Recording
+* https://www.youtube.com/watch?v=wqoqJLYBqYM&list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG&index=10
+
+### January 22, 2021
+
+#### Participants
+* Kara de la Marck
+* Gareth Evans 
+* Vibhav Bobade
+
+
+#### Agenda and Notes
+* Action Item Review, All
+* [CDF calendar of events, for meetings on Interoperability and CloudEvents:](https://calendar.google.com/calendar/u/0/embed?src=linuxfoundation.org_mhf0kmgedn67ihni8r129avp24@group.calendar.google.com&ctz=America/Los_Angeles)
+* GSoC 2021 Cloud Native Events proposal by Vibhav https://github.com/jenkins-infra/jenkins.io/pull/4079
+    * Metadata for CloudEvents for Jenkins -- how to define, what should the metadata contain.  
+    * Vibhav: following metadata that is being generated and defined for Tekton is a start.
+    * We should make a table on what the metadata looks like. Action item for Vibhav 
+* GSoC 2021 Tekton Client Plugin potential  proposal by Vibhav
+    * PoC is done
+    * A lot that students can do, especially with the GSoC timeline that we now hald (1.5 months rather than 3).
+    * Work that needs to be done fits well within the current timeline
+    * Vibhav: will create draft to share within gsoc email channel and gitter.
+    * Gareth: potential integration between Tekton as Code and Tekton Client plugin.
+    * Tekton as Code: https://github.com/chmouel/tekton-asa-code 
+Being bootstrapped at Red Hat, will likely be merged into Tekton. Uses Tekton dashboard to visualise Tekton tasks.
+    * Related Tekton issue: https://github.com/tektoncd/pipeline/issues/859
+
+#### Action Items
+* Research needed on what CloudEvents metadata should contain. 
+* Figure out user stories around CloudEvents: what CloudEvents can do. 
+* Play with CloudEvents SDK
+* Find endpoints that can be subscribed to. 
+* First prototype to understand how CloudEvents work.
+* Vibah: figure out extent to which to bootstrap the project for GSoC students.
+* Vibhav: will create draft on Tekton Client Plugin to share within gsoc email channel and gitter.
+* Would be great if the Jameses could attend to discuss Tekton Client Plugin and Tekton as Code, as they have done similar work in Jenkins X.
+
+
+#### Meeting Recording
+* https://www.youtube.com/watch?v=Ezy-Quj4L5Q&list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG&index=9
+
+### January 15, 2021
+
+#### Participants
+* Kara de la Marck
+* Gareth Evans 
+* Vibhav Bobade
+
+
+#### Agenda and Notes
+* Action Item Review, All
+* New time for SIG:
+    * 2 hours earlier, Friday still works
+* Tekton Client Plugin, Status update
+    * https://github.com/jenkinsci/tekton-client-plugin/blob/master/roadmap.md
+    * Possibility to make this into a GSoC project, to have greater support in moving roadmap forward.
+    * Tekton catalogue support is a goal.
+    * Gareth interested in having Jenkins support Tekton
+    * Vibhav will create GSoC draft proposal and submit to jenkins gsoc mailing list.
+    * GSoC proposal for Cloudevents plugin: https://docs.google.com/document/d/1xsI6nkEPzXId5npXLrjz3Ydj7jx9Rf8g7SWnTldpeQc/edit#heading=h.vn4ec3wsbisx
+
+#### Action Items
+* Vibhav will create GSoC draft proposal and submit to jenkins gsoc mailing list.
+* Kara will propose moving this meeting 2 hours earlier
+
+#### Meeting Recording
+* https://www.youtube.com/watch?v=9w9EuUn2zdk&list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG&index=8
