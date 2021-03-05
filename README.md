@@ -36,13 +36,11 @@ Chair:
 
 ## Communication
 
-SIG Interoperability communication happens via a public mailing list and everyone is
+Cloud Native SIG communication happens via Gitter and Jenkins-dev public mailing list and everyone is
 welcome to join our open discussions.
 
-SIG Interoperability also uses Slack for additional collaboration opportunities.
-
-* Maillist: https://lists.cd.foundation/g/sig-interoperability
-* Slack Channel: #sig-interoperability on [CDF Slack](https://join.slack.com/t/cdeliveryfdn/shared_invite/enQtODM2NDI1NDc0MzIxLTA1MDcxMzUyMGU2NWVlNmQwN2M1N2M4MWJjOWFkM2UzMDY0OWNkNjAzNzM0NzVkNjQ5M2NkMmY2MTRkMWY4MWY)
+* Gitter Channel: #cloud-native-sig channel on [jenkinsci Gitter](https://gitter.im/jenkinsci/cloud-native-sig)
+* Maillist: [jenkinsci-dev](jenkinsci-dev@googlegroups.com ) maillist.
 
 ## Meetings
 
