@@ -17,7 +17,7 @@ New members are advised to:
 
 * Join the #cloud-native-sig channel on [jenkinsci Gitter](https://gitter.im/jenkinsci/cloud-native-sig) and introduce yourself.
 * Regularly join the [SIG meetings](/meetings.md).
-* Join the [jenkinsci-dev](jenkinsci-dev@googlegroups.com ) maillist.
+* Join the [jenkinsci-dev](https://www.jenkins.io/mailing-lists/#jenkinsci-users-googlegroups-com) mail list.
 <!-- * Submit a PR to add yourself to the [members list](#members). -->
 * Here are various ways to get involved:
   * Share your thoughts by joining the meetings or by posting to maillist and Gitter channel.
@@ -40,11 +40,11 @@ Cloud Native SIG communication happens via Gitter and Jenkins-dev public mailing
 welcome to join our open discussions.
 
 * Gitter Channel: #cloud-native-sig channel on [jenkinsci Gitter](https://gitter.im/jenkinsci/cloud-native-sig)
-* Maillist: [jenkinsci-dev](jenkinsci-dev@googlegroups.com ) maillist.
+* Mail list: [jenkinsci-dev](https://www.jenkins.io/mailing-lists/#jenkinsci-users-googlegroups-com)
 
 ## Meetings
 
-SIG Interoperability meets every week on Fridays at 14:00UTC. (*See your timezone [here](https://time.is/1400_in_UTC)*).
+Jenkins Cloud Native SIG meets every week on Fridays at 14:00UTC. (*See your timezone [here](https://time.is/1400_in_UTC)*).
 
 * Meeting agenda and minutes: [here](./meetings.md)
 * Meeting recordings: [Jenkins Cloud Native Playlist](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
