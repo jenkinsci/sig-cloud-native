@@ -1,6 +1,6 @@
 # Jenkins Cloud Native SIG
 
-## Intro
+
 Venue for all sorts of Cloud Native topics and proposals.
 
 ## Quick links
