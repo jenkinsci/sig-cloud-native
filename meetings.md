@@ -19,7 +19,7 @@
 ## Logistics
 
 * **Meeting notes on HackMD.io**: https://hackmd.io/@cdf-sig-interoperability/ry3TTB5DL
-* **When**: Fridays at 14:00UTC (*See your timezone [here](https://time.is/1400_in_UTC)*).
+* **When**: Fridays at 12:00UTC (*See your timezone [here](https://time.is/1200_in_UTC)*).
 * **Zoom Meeting Link**: https://zoom.us/j/91266012072?pwd=OWJZSGVuY2s3aHhHbitPVnIwNDBIUT09
 * **Meeting Recordings**: [Jenkins Cloud Native Playlist](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
 * **Jenkins Events Calendar**: [here](https://www.jenkins.io/events/)
@@ -46,13 +46,23 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
     * Woohoo! 
     * How does this impact potential GSoC student projects?
     * https://github.com/jenkinsci/tekton-client-plugin/blob/master/roadmap.md
+    * Gareth: as a PoC James contribution is spot-on.
+    * Gareth: James has created a PR on enhancements proposals for Tekton (see James twitter)
+    * 
 * Dina Graves Portman will present the 4 Key Framework to the Interoperability SIG on 18 March.
     * Link to her presentation and demo at cdCon, Measuring DevOps: https://www.youtube.com/watch?v=rbenCqQCa-4&feature=youtu.be
 * CDF Events SIG is now on!
     * https://github.com/cdfoundation/sig-events
     * Meetings are open, meeting info on the above link
     * Excellent reference and resource for our work. 
-
+* [Design Doc: DSL in Tekton Client Plugin](https://docs.google.com/document/d/10n3vgYrjS_M1571OUOYLw4tK2QmxY7kp_wyUT3ke4gY/edit#heading=h.txtc8k4mxium)
+    * https://www.jenkins.io/projects/gsoc/2021/project-ideas/tekton-client-plugin/
+* In latest Interoperability SIG meeting, we had a presentation of [Project "Piper"](https://www.project-piper.io/) by Oliver Nocon, from SAP
+    * Recording: https://www.youtube.com/watch?v=LbdMG0O4m6Y
+    * The goal of project "Piper" is to substantially ease setting up continuous delivery in your project using SAP technologies.
+    * Most of their pipelines (pipeline templates use Jenkins)
+    * Oliver Nocon discussed their need for a DSL such as that of Jenkins X 2.0 DSL (which has now been deprecated, with the Jenkins X project using Tekton syntax)
+    
 
 ### February 26, 2021
 
