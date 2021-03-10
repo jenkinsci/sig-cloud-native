@@ -1,14 +1,16 @@
 # Jenkins Cloud Native SIG
 
+## Intro
+Venue for all sorts of Cloud Native topics and proposals.
+
 ## Quick links
 
 - [Meeting Information](#meetings)
-<!-- - [Members](#members) -->
 - [New Members](#new-members)
 - [Governance](#governance)
 - [Communication](#communication)
 - [Meetings](#meetings)
-
+<!-- - [Members](#members) -->
 ## New Members
 
 Membership to SIG Interoperability is open to public and self-declared.
@@ -44,7 +46,7 @@ welcome to join our open discussions.
 
 ## Meetings
 
-Jenkins Cloud Native SIG meets every week on Fridays at 14:00UTC. (*See your timezone [here](https://time.is/1400_in_UTC)*).
+Jenkins Cloud Native SIG meets every week on Fridays at 12:00UTC. (*See your timezone [here](https://time.is/1200_in_UTC)*).
 
 * Meeting agenda and minutes: [here](./meetings.md)
 * Meeting recordings: [Jenkins Cloud Native Playlist](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
