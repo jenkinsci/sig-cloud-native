@@ -33,6 +33,89 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 :::
 
+### March 12, 2021
+
+#### Participants
+* Kara de la Marck
+* Gareth Evans
+* Mauricio Salatino
+* Vibhav Bobade
+* Sagar Khurana
+* <add your name>
+
+#### Agenda and Notes
+* Welcome and thanks to Mauricio for joining us.
+    * Mauricio has volunteered as a mentor on the [proposed GSoC CloudEvents plugin for Jenkins project](https://www.jenkins.io/projects/gsoc/2021/project-ideas/cloudevents-plugin/).
+    * Mauricio brings a deep interest and expertise as an active member in the [CDF's Event SIG](https://github.com/cdfoundation/sig-events)
+    * You can find out more about the Event SIG, its goals, and how to get involved in this post: ['CD Foundation Announces Industry Initiative to Standardize Events from CI/CD Systems'](https://cd.foundation/blog/2021/03/16/cd-foundation-announces-industry-initiative-to-standardize-events-from-ci-cd-systems/)
+
+[pretty much a transcript below, but it was a good discussion. :)]
+* Vibhav discuss CloudEvents plugin
+    * Overview: 
+        Goals are to be able to listen on cloudevents, trigger Jenkins jobs on cloudevents, be able to emit cloudevents for Jenkins jobs and other events created by Jenkins, and have them in the cloudevents format.
+    * Plugin: https://github.com/cloudevents/sdk-java/blob/master/examples/basic-http/src/main/java/io/cloudevents/examples/http/basic/BasicHttpServer.java
+    * Question on cloudevent subscription and discovery, has this been standardized? 
+* Mauricio:
+    * Subscription and discovery of cloudevents is work that is getting started.
+    * And subsciption and discovery likely is an extension of the scope of this GSoC project.
+    * The cloudevents plugin will be a plugin that will emit events when you run this plugin inside Jenkins and also an endpoint that will be exposed to enable the submission of cloudevent notifications to Jenkins itself. These 2 concepts are what the initial scope of the work should be.
+    * 'Emiting events' that's usally submitting a post request to url. Once that is provided then can hook that 'thing' to other tools that are going to be able to deal with forwarding cloudevents to other systems, etc.
+    * The initial plugin work is pretty well scoped.
+    * One outstanding question is the format of the events themselves. This is work that the CDF Events SIG is focused on right now. And also, what events do you emit (standardizing on that).
+    * For this plugin we should avoid emitting Jenkins specific events, because if Jenkins specific events are emitted then this can limit interoperability and might limit the usefulness of this plugin to the Jenkins ecosystem.
+        * The plugin should avoid emiting Jenkins specific events
+    * But if event standard events, then can interop with other tools. And that is what we are trying to acieve in the CDF.
+    * How to get started on this plugin work?
+        * Start by experimenting with plugin for Jenkins that emits cloudevents. And exposing an endpoint that consumes cloudevents coming from other systems.
+        * And then can start focusing on the format of the cloudevents themselves. Start with simple cloud event with minimal data, making sure can emit the events at right times.
+        * Then figure out what info is available within the jobs and what can/should be included in the events
+        * Need to establish the identifiers for the events you determine should be emitted. Then details become a little more tricky. So best first to see a plugin that can emit and consume events, then we can go into the details of the data.
+
+* Vibhav
+    * In [design doc for Cloudevents plugin proposal](https://docs.google.com/document/d/1vJ06K92-2wumfAUAiUEwwx921iR19v4zu7nHPkScrvk/edit#heading=h.txtc8k4mxium), Vibhav has created a table of cloudevents based on the Tekton cloudevents.
+    * When Mauricio mentioned the importance of being generic with cloudevents and steering away from emitting Jenkins specific cloudevents, how do we ensure this?
+* Mauricio
+    * Good! In CDF we are defining generic events for exactly this same reason. If emit Jenkins specific events, other tools (eg, Tekton) will not be able to understand them. So what we are doing is creating essentially a shared language between these tools so they can exchange event data and react based on differnt events.
+    * But don't need to focus too much on that right now. If we get a basic plugin created (described above) then we can focus on the data format and event definitions. Goal right now is to be able to emit cloudevents and listen for events.
+* Vibahv: one of the goals of this plugin is interoperability between different tools, so wants to ensure from the beginning we have the goal of supporting generic cloudevents.
+    * Does Mauricio have an example of what a generic cloudevent would look like?
+* Mauricio: Yes. [CDF SIG](https://github.com/cdfoundation/sig-events) PRs have some examples.
+    * Note, 'Job' is more of a Jenkins concept, and likely we'll use a phrase like 'step'. So, some of the concepts and how those are labelled needs to be more generic, but the concept, and the way of emitting events, is the same.
+    * One of the things we can do in this project is create/define the Java objects that are going to represent the generic events.
+    * To clarify: Very likely that Java objects will be created inside the plugin and then we are going to use the [cloudevents sdk in Java](https://github.com/cloudevents/sdk-java/blob/master/examples/basic-http/src/main/java/io/cloudevents/examples/http/basic/BasicHttpServer.java) to emit the events.
+    * So, instead of creating the Java objects inside the plugin, we can create a separate library that includes the events definition and then we can plug in the generic ones.
+* Vibhav: [Have created a repo](https://github.com/jenkinsci/cloudevents-plugin) to get started on the work.
+* Mauricio: Some of the work on creating these definitions of events will be mapping cloudevents to Jenkins events. And when receiving cloudevent notifications, what does the Jenkins plugin do in response. We'll need to think about which kind of events to support and which are not.
+* Vibhav: So when a cloudevent is 'received' we should be able to put an cloudevent trigger on a Job which is listening on a specific cloudevent. eg, listening on a Tekton Task completion, and then the Job will be triggered once received.
+* Question for Gareth: Where should main the configuration for all this kept? Do we keep all the information regarding what events we should listen on the global configuration or on the Jobs? Should it be global or localised per Job? 
+* Gareth: You could do a global configuration for events. You may also want to do it on a Job trigger as well.
+* Vibhav: on the Job trigger, we could reference that to the global plugin configuration and choose from there. 
+    * The global plugin configuration is more of an admin thing, allowing certain cloudevents to get into the system, reading certain cloudevents, allowing certain projects to listen on certain cloudevents. Am I overthinking the security aspects of this? Would per Job be more secure? 
+* Gareth: I can see there being a use in the future on the ability to filter out events of a certain type. For example, if you've got a bad actor in the system that is sending invalid events, etc.
+* Kara: if you wanted to control which events were going to be emitted, you could write a policy for that.
+    * Gareth: yes
+* Kara: Then once events are emitted they are put in some sort of queue and can you put permissions on who has access to that information?
+* Mauricio: Yes, but that should be outside of Jenkins. Later we can write more complex components that deal with that, but I wouldn't start with that.
+    * Kara: yes, and then additional question on data formats for events.
+* Mauricio: Work in proress, PRs are up for a first go at defining the vocabulary.  From there will work on definition of cloudevents using that vocabularly, so at least the metadata of events should be there. From there we can start to create a Java model for events.
+    * Also, has done a draft implementation in Go.
+* Mauricio: That's one reason why for plugin work, we should focus on first implementation of emitting and receiving events and then move forward from there in terms of determining the exact data format for events.
+* Vibhav: Yes. That sounds like a good place to start.
+* Mauricio: Eventually, we may want the plugin to be able to emit both Jenkins specific and generic CDF definited cloudevents and then in configuration can decide which events get emitted.
+* Vibhav: The Go library that Mauricio has created - we could use that to debug a cloudevents listener.
+* Mauricio: yes. In addition, there is the [sockeye.io](https://github.com/n3wscott/sockeye) project that you can use as a sink for events and you can graphically see the events that are arriving.
+* Vibhav: yes, very nice for debugging.
+* Mauricio: Can we get a Jenkins instance in the cloud where we can put this plugin?
+* Vibhav: can spin up Jenkins in minikube, while testing the plugin. 
+* Mauricio: running it locally is fine for now. Eventually, would be nice for CloudBees to provide some cloud resources, if we want to connect different tools, etc.
+* Kara: when we get to the point where we need that, I can ask.
+* all: Thank you, Mauricio for joining today. Awesome discussion :) 
+* Sagar: Question on using java cloudevents sdk example to emit cloud events.
+
+#### Meeting Recording
+https://www.youtube.com/watch?v=o9aPtZkMyd8&list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG&index=11
+
+
 ### March 5, 2021
 
 #### Participants
