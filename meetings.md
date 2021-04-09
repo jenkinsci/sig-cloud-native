@@ -7,6 +7,8 @@
 * [Meeting Recordings](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
 * Jenkins Roadmap: https://www.jenkins.io/project/roadmap/
 * [Agenda and Notes](#Agenda-and-Notes)
+    * [2021-04-9 Meeting](#April-09-2021)
+    * [2021-04-2 Meeting](#April-02-2021)
     * [2021-03-5 Meeting](#March-05-2021)
     * [2021-02-26 Meeting](#February-26-2021)
     * [2021-02-12 Meeting](#February-12-2021)
@@ -37,6 +39,9 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 #### Participants
 * Kara de la Marck
+* Gareth Evans
+* Sagar Khurana
+* <GSoC mentees>
 * <add your name>
 
 #### Agenda and Notes
@@ -49,8 +54,9 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 * Tekton Client Plugin update
 * GSoC updates - as related to Cloud Native initiatives
-
-* Discuss Vibhav blogpost
+* Questions from GSoC applicants
+    * Discussion on: https://www.jenkins.io/projects/gsoc/2021/project-ideas/semantic-release-version/
+    * https://github.com/jenkinsci/jep/blob/master/jep/229/README.adoc
 
     
 * Discuss: https://tech.ebayinc.com/engineering/how-ebay-leverages-kubernetes-helm-charts-and-jenkins-pipelines-to-deliver-high-quality-software/ references plans to leverage Tekton in their Pipelines. Now with Jenkins, so it is a good opportunity for the Tekton Client plugin.
