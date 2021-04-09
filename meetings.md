@@ -33,6 +33,70 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 :::
 
+### April 9, 2021
+
+#### Participants
+* Kara de la Marck
+* <add your name>
+
+#### Agenda and Notes
+
+* Announcement: Jenkins Contributor Summit on 25 June 2021, https://www.jenkins.io/events/contributor-summit/
+    * Free registration
+    * Draft Agenda is here: https://docs.google.com/document/d/1JVbWudREipEF5UJn-bBRU5QIjKf8mzFP9iFdwWbgFB0/edit?pli=1#heading=h.quu0wh66oy0i
+    * Great opportunity to speak about the work we are doing in Cloud Native SIG
+        * Demos welcome :)
+
+* Tekton Client Plugin update
+* GSoC updates - as related to Cloud Native initiatives
+
+* Discuss Vibhav blogpost
+
+    
+* Discuss: https://tech.ebayinc.com/engineering/how-ebay-leverages-kubernetes-helm-charts-and-jenkins-pipelines-to-deliver-high-quality-software/ references plans to leverage Tekton in their Pipelines. Now with Jenkins, so it is a good opportunity for the Tekton Client plugin.
+
+### April 2, 2021
+
+#### Meeting cancelled this week due to holidays around the globe.
+
+### March 19, 2021
+
+#### Participants
+* Kara de la Marck
+* Vibhav Bobade
+* Gareth Evans
+* Sagar Khurana
+* <add your name>
+
+#### Agenda and Notes
+
+* GSoC mentor invitations to the Continuous Delivery Foundation GSoC mentor org have been sent out -- please check your spam folder as there is a tendency this year for gmail to filter the emails to spam 😂
+* Tekton Client Plugin release discussion
+* Gareth: have started work 
+* Vibhav: what would be the criteria for a release? Anything else wanted in the first release?
+* Gareth: the goal of a first realease will be the ability to try it out and test it on non-production pipelines
+    * at moment doesn't need to be a 'complete' first release => the point of this release is to be able to test out the plug-in
+    * see JEP 229: https://github.com/jenkinsci/jep/blob/master/jep/229/README.adoc
+* Vibhav: script: https://github.com/jenkinsci/tekton-client-plugin/blob/master/deploy.sh
+
+* Gareth: https://github.com/jenkinsci/tekton-client-plugin/pull/64
+The log-cli plugin implements basic aspects of this proposal from the developer side.
+
+repository-permissions-updater #1747 and repository-permissions-updater #1779 implement changes to infrastructure.
+
+plugin-pom #375 and pom #147 add a POM profile to block MRP in CD mode.
+
+The verify-ci-status Action and the jenkins-maven-cd Action implement most of the logic of the CD process.
+
+* Vibhav: lets run a meetup this month on this plugin
+
+
+#### Action Items
+* Cloud config for tekton client plugin (Vibhav)
+* TaskRun async logging (Vibhav)
+* Kara to liase with Mark and Oleg on existing Jenkins meetups and if a meetup on this plugin fits with existing schedule or do an additional meetup
+
+
 ### March 12, 2021
 
 #### Participants
