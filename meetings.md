@@ -20,7 +20,7 @@
 
 ## Logistics
 
-* **Meeting notes on HackMD.io**: https://hackmd.io/@cdf-sig-interoperability/ry3TTB5DL
+* **Meeting notes on HackMD.io**: https://github.com/jenkinsci/sig-cloud-native/blob/main/meetings.md
 * **When**: Fridays at 12:00UTC (*See your timezone [here](https://time.is/1200_in_UTC)*).
 * **Zoom Meeting Link**: https://zoom.us/j/91266012072?pwd=OWJZSGVuY2s3aHhHbitPVnIwNDBIUT09
 * **Meeting Recordings**: [Jenkins Cloud Native Playlist](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
