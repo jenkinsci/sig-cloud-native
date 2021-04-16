@@ -20,7 +20,7 @@
 
 ## Logistics
 
-* **Meeting notes on HackMD.io**: https://hackmd.io/7uB6FuEqQAOp_-blPGykzA
+* **Meeting notes on HackMD.io**: https://hackmd.io/@cdf-sig-interoperability/ry3TTB5DL
 * **When**: Fridays at 12:00UTC (*See your timezone [here](https://time.is/1200_in_UTC)*).
 * **Zoom Meeting Link**: https://zoom.us/j/91266012072?pwd=OWJZSGVuY2s3aHhHbitPVnIwNDBIUT09
 * **Meeting Recordings**: [Jenkins Cloud Native Playlist](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
@@ -40,8 +40,35 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 #### Participants
 * Kara de la Marck
 * Gareth Evans
+* Aditya Srivastava
+* Nivedita Prasad
+* Oleg
+* <add your name>
+
+#### Agenda and Notes
+* Thank you to everyone who submitted GSoC proposals!
+    * We have received some excellent ones for Cloud Native Jenkins :)
+    
+* Questions from Aditya on GSoC proposal: https://docs.google.com/document/d/1E0FdxdXP1JZb88-sDqmilmz2gJ0qp4BANCTLlXJOaTQ/edit?pli=1
+    * Question on relationship with https://github.com/jenkins-x-plugins/jx-release-version
+    * Gareth: `jx-release-version` can be used with JEP-229 to generate a SemVer compatible version based on the commit history.
+    
+* Question on flexibility of changing name of GSoC proposal
+    * Not possible as the proposal is already submitted to GSoC
+    * However, if a project is selected for GSoC, during the community bonding and coding phases, there is flexibility to  how the work is shaped and scoped
+    
+* Updates on Kubernetes Operator, which has become an official part of the Jenkins project: https://www.jenkins.io/blog/2021/04/15/jenkins-operator-sub-project/
+
+#### Meeting Recording
+https://www.youtube.com/watch?v=ynm6XpiNKw4&list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG&index=1
+
+### April 9, 2021
+
+#### Participants
+* Kara de la Marck
+* Gareth Evans
 * Sagar Khurana
-* <GSoC mentees>
+* GSoC applicants
 * <add your name>
 
 #### Agenda and Notes
@@ -60,6 +87,8 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
     
 * Discuss: https://tech.ebayinc.com/engineering/how-ebay-leverages-kubernetes-helm-charts-and-jenkins-pipelines-to-deliver-high-quality-software/ references plans to leverage Tekton in their Pipelines. Now with Jenkins, so it is a good opportunity for the Tekton Client plugin.
+
+
 
 ### April 2, 2021
 
