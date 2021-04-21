@@ -19,7 +19,7 @@ New members are advised to:
 
 * Join the #cloud-native-sig channel on [jenkinsci Gitter](https://gitter.im/jenkinsci/cloud-native-sig) and introduce yourself.
 * Regularly join the [SIG meetings](/meetings.md).
-* Join the [jenkinsci-dev](https://www.jenkins.io/mailing-lists/#jenkinsci-users-googlegroups-com) mail list.
+* Join the [jenkins-cloud-native-sig](https://www.jenkins.io/mailing-lists/#jenkinsci-cloud-native-sig-googlegroups-com) mail list.
 <!-- * Submit a PR to add yourself to the [members list](#members). -->
 * Here are various ways to get involved:
   * Share your thoughts by joining the meetings or by posting to maillist and Gitter channel.
@@ -42,7 +42,7 @@ Cloud Native SIG communication happens via Gitter and Jenkins-dev public mailing
 welcome to join our open discussions.
 
 * Gitter Channel: #cloud-native-sig channel on [jenkinsci Gitter](https://gitter.im/jenkinsci/cloud-native-sig)
-* Mail list: [jenkinsci-dev](https://www.jenkins.io/mailing-lists/#jenkinsci-users-googlegroups-com)
+* Mail list: [jenkins-cloud-native-sig](https://www.jenkins.io/mailing-lists/#jenkinsci-cloud-native-sig-googlegroups-com)
 
 ## Meetings
 
