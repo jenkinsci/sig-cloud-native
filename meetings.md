@@ -35,7 +35,34 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 :::
 
-### April 9, 2021
+### April 23, 2021
+
+#### Participants
+* Kara de la Marck
+* Gareth Evans
+* Aditya Srivastava
+* Vibhav Bobade
+* <add your name>
+
+#### Agenda and Notes
+* Announcement:
+    * [Jenkins Online Contributor Summit on June 25, 2021](https://www.jenkins.io/events/contributor-summit/) 
+        * Topics include but not limited to: Jenkins 3 and architecture changes, Jenkins Security, Cloud Native Jenkins, interoperability
+        * co-located with [cdCon](https://events.linuxfoundation.org/cdcon/)
+        * Both cdCon and the Jenkins Contributor Summit are free to register and attend, sign up here: https://events.linuxfoundation.org/cdcon/register/
+* [GSoC Accepted student projects announced by GSoC on May 17 18:00 UTC](https://developers.google.com/open-source/gsoc/timeline)
+* Tekton Client Plugin updates and discussions
+    * April 21 [blog post by James Strachan on the Tekton Client plugin](https://www.jenkins.io/blog/2021/04/21/tekton-plugin/)
+    * [Open PR (by James Strachan) to Tekton project to Add Step Composition to Tasks](https://github.com/tektoncd/pipeline/pull/3807)
+    * [WIP by Gareth Evans to create a simple pipeline integration](https://github.com/jenkinsci/tekton-client-plugin/pull/133)
+    * [Tekton open issue to discuss Jenkins Remote Execution Custom Task](https://github.com/tektoncd/experimental/issues/697)
+    * Excellent docs on [Evolving Java Based APIs](https://wiki.eclipse.org/Evolving_Java-based_APIs)
+
+#### Meeting Recording
+https://youtu.be/J8V8hTbuTR0
+
+
+### April 16, 2021
 
 #### Participants
 * Kara de la Marck
