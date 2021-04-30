@@ -13,7 +13,7 @@ Venue for all sorts of Cloud Native topics and proposals.
 <!-- - [Members](#members) -->
 ## New Members
 
-Membership to SIG Interoperability is open to public and self-declared.
+Membership to Jenkins Cloud Native SIG is open to public and self-declared.
 
 New members are advised to:
 
