@@ -35,6 +35,30 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 :::
 
+### May 14, 2021
+
+#### Participants
+* Vibhav Bobade
+* Kara de la Marck
+* Gareth Evans
+* Aditya Srivastava
+
+#### Agenda and Notes
+* Discussion on todays on-line meetup on [Tekton Client plugin](https://github.com/jenkinsci/tekton-client-plugin)
+    * Some ideas that we touched on during that meeting we discuss further
+        * [Mink](https://github.com/mattmoor/mink)
+        * Better debugging for Tekton pipleines when using [Tekton Client plugin](https://github.com/jenkinsci/tekton-client-plugin)
+        * Could improve logic on how Tekton logs are streamed to Jenkins -- this would help in debugging
+        * [Secondary ingress for Jenkins](https://github.com/jenkinsci/helm-charts/blob/dcdcadf85e36028926b1f36a14eee4a27fc0e10e/charts/jenkins/templates/jenkins-controller-secondary-ingress.yaml)
+        * Future use of Tekton Client plugin with CloudEvents plugin
+
+#### Action Items
+* Debugging Tekton Pipelines demo. Get more verbose debuggable information back to Jenkins (Gareth, Vibhav)
+* Check if fabric8 Tekton client CRD maps are generated or written manually (Vibhav)
+
+#### Meeting Recording
+https://youtu.be/EpskXJQdoUA
+
 ### April 23, 2021
 
 #### Participants
@@ -44,7 +68,8 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 * Vibhav Bobade
 * <add your name>
 
-#### Agenda and Notes
+#### Agenda and Notes 
+
 * Announcement:
     * [Jenkins Online Contributor Summit on June 25, 2021](https://www.jenkins.io/events/contributor-summit/) 
         * Topics include but not limited to: Jenkins 3 and architecture changes, Jenkins Security, Cloud Native Jenkins, interoperability
