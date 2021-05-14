@@ -53,6 +53,9 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
         * Could improve logic on how Tekton logs are streamed to Jenkins -- this would help in debugging
         * [Secondary ingress for Jenkins](https://github.com/jenkinsci/helm-charts/blob/dcdcadf85e36028926b1f36a14eee4a27fc0e10e/charts/jenkins/templates/jenkins-controller-secondary-ingress.yaml)
         * Future use of Tekton Client plugin with CloudEvents plugin
+        * Managing Credentials with Tekton Client plugin (and in general with K8s):
+            * [Issue to provide Support for K8s Credential Provider in Tekton Client plugin](https://github.com/jenkinsci/tekton-client-plugin/issues/33) 
+            * Discussion on [Kubernetes Secrets Store CSI Driver](https://https://github.com/kubernetes-sigs/secrets-store-csi-driver)
 
 #### Action Items
 * Debugging Tekton Pipelines demo. Get more verbose debuggable information back to Jenkins (Gareth, Vibhav)
