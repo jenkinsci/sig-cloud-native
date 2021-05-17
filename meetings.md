@@ -47,6 +47,7 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 #### Agenda and Notes
 * Discussion on todays on-line meetup on [Tekton Client plugin](https://github.com/jenkinsci/tekton-client-plugin)
+    * [Link for Tekton Client plugin presentation and demo](https://www.youtube.com/watch?v=2RT9XwIWkVQ)
     * Some ideas that we touched on during that meeting we discuss further
         * [Mink](https://github.com/mattmoor/mink)
         * Better debugging for Tekton pipleines when using [Tekton Client plugin](https://github.com/jenkinsci/tekton-client-plugin)
@@ -63,6 +64,9 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 #### Meeting Recording
 https://youtu.be/EpskXJQdoUA
+
+#### Recording of Tekton Client plugin presentation and demo
+https://www.youtube.com/watch?v=2RT9XwIWkVQ
 
 ### April 23, 2021
 
