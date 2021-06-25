@@ -7,6 +7,8 @@
 * [Meeting Recordings](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
 * Jenkins Roadmap: https://www.jenkins.io/project/roadmap/
 * [Agenda and Notes](#Agenda-and-Notes)
+    * [2021-06-04 Meeting](#June-04-2021)
+    * [2021-05-21 Meeting](#May-21-2021)
     * [2021-05-14 Meeting](#May-14-2021)
     * [2021-04-23 Meeting](#April-23-2021)
     * [2021-04-9 Meeting](#April-09-2021)
@@ -23,8 +25,8 @@
 ## Logistics
 
 * **Meeting notes on HackMD.io**: https://hackmd.io/7uB6FuEqQAOp_-blPGykzA
-* **When**: Fridays at 12:00UTC (*See your timezone [here](https://time.is/1200_in_UTC)*).
-* **Zoom Meeting Link**: https://zoom.us/j/91266012072?pwd=OWJZSGVuY2s3aHhHbitPVnIwNDBIUT09
+* **When**: Fridays at 11:00UTC (*See your timezone [here](https://time.is/1100_in_UTC)*).
+* **Zoom Meeting Link**: https://zoom.us/j/91266012072?pwd=373103
 * **Meeting Recordings**: [Jenkins Cloud Native Playlist](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
 * **Jenkins Events Calendar**: [here](https://www.jenkins.io/events/)
 * **2020 Meeting Minutes**: [Google doc containing minutes of meetings in 2020](https://docs.google.com/document/d/13zeaKgtud5jZ5RqZEh1lrwjDXJRm7j31scPymlrMpfo/edit#heading=h.jlsdrmbt2n8j)
@@ -36,6 +38,45 @@ Meeting agenda and notes are kept on [HackMD.io](https://hackmd.io/7uB6FuEqQAOp_
 If you are looking for 2020 minutes of meetings, please take a look at [2020 Meeting Minutes document](https://docs.google.com/document/d/13zeaKgtud5jZ5RqZEh1lrwjDXJRm7j31scPymlrMpfo/edit#heading=h.jlsdrmbt2n8j), which is a Google doc containing past meeting minutes.
 
 :::
+
+### June 4, 2021
+
+#### Participants
+* Vibhav Bobade
+* Kara de la Marck
+* Gareth Evans
+
+#### Agenda and Notes
+* Tekton Client plugin update
+    * 1.0 released, has been demoed in Jenkins meetup
+    * Have had more PRs, and good feedback
+    * Next steps?
+    * DSL
+    * Finesse cluster configs
+    * Perhaps have a mentoring project in the autumn under LF mentoring scheme
+    * Gareth: keeping close to Tekton syntax may be good
+    * Vibhav: we need to figure out the syntax to map resources onto a declarative pattern
+    * When it comes to DSL need a programmatic mapping
+    * Gareth: the syntax Vihav showed is very clean
+    * Need to keep in mind how Tekton will evolve and map to versions: https://github.com/tektoncd/community/blob/main/teps/0041-tekton-component-versioning.md
+    * Tekton operator: https://github.com/tektoncd/operator
+    * Tekton Client plugin project board: https://github.com/jenkinsci/tekton-client-plugin/projects/3
+* Jenkins Contributor Summit: https://www.jenkins.io/events/contributor-summit/
+* Vibvah: Cloud Native track for Contributor Summit can pick up the discussion from BoF cdCon session, and have an update and discussion
+
+### May 21, 2021
+
+#### Participants
+* Vibhav Bobade
+* Kara de la Marck
+* 
+
+#### Agenda and Notes
+* GSoC 2021 accepted projects have been announced!
+* Please welcome:
+    *  Shruti Chaturvedi as GSoC participant working on CloudEvents Plugin for Jenkins
+    * 
+
 
 ### May 14, 2021
 
