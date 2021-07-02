@@ -39,6 +39,17 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 
 :::
 
+### July 2, 2021
+
+#### Participants
+* Kara de la Marck
+* Aditya
+
+#### Agenda and Notes
+* Overview of GSoC timeline and upcoming evaluations. 
+* Excellent talk by Martin Kleppmann giving a wider-lens view of events: https://www.youtube.com/watch?v=72W_VvFRqc0
+
+
 ### June 4, 2021
 
 #### Participants
@@ -69,7 +80,7 @@ If you are looking for 2020 minutes of meetings, please take a look at [2020 Mee
 #### Participants
 * Vibhav Bobade
 * Kara de la Marck
-* 
+* Shruti Chaturvedi
 
 #### Agenda and Notes
 * GSoC 2021 accepted projects have been announced!
