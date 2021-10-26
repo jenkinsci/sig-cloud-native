@@ -3,6 +3,11 @@
 
 Venue for all sorts of Cloud Native topics and proposals.
 
+## Update
+
+* **Cloud Native SIG meetings are currently on hiatus and we are looking for a new SIG chair to lead the meetings going forwards.**
+* **If you would like to become involved in the Jenkins Cloud Native SIG, and even potentially lead the SIG, please introduce yourself on the Jenkins Cloud Native Gitter channel:** https://gitter.im/jenkinsci/cloud-native-sig
+
 ## Quick links
 
 - [Meeting Information](#meetings)
@@ -32,10 +37,6 @@ Cloud Native SIG is a [Jenkins Special Interest Group](https://www.jenkins.io/si
 
 The process Jenkins Cloud Native SIG follows can be seen from [here](https://github.com/jenkinsci/jep/tree/master/jep/4).
 
-Chair:
-
-* Kara de la Marck ([@MarckK](https://github.com/MarckK)), CloudBees
-
 ## Communication
 
 Cloud Native SIG communication happens via Gitter and Jenkins-dev public mailing list and everyone is
@@ -46,7 +47,7 @@ welcome to join our open discussions.
 
 ## Meetings
 
-Jenkins Cloud Native SIG meets every week on Fridays at 12:00UTC. (*See your timezone [here](https://time.is/1200_in_UTC)*).
+Jenkins Cloud Native SIG is currently on hiatus. See [Update above](#update).
 
 * Meeting agenda and minutes: [here](./meetings.md)
 * Meeting recordings: [Jenkins Cloud Native Playlist](https://www.youtube.com/playlist?list=PLN7ajX_VdyaOFG9hTrswbO-ZK_n4B8CaG)
