@@ -24,6 +24,9 @@
 
 ## Logistics
 
+* **Cloud Native SIG meetings are currently on hiatus and we are looking for a new SIG chair to lead the meetings going forwards.**
+* **If you would like to become involved in the Jenkins Cloud Native SIG and even potentially lead the SIG, please introduce yourself on the Jenkins Cloud Native Gitter channel:** https://gitter.im/jenkinsci/cloud-native-sig
+
 * **Meeting notes on HackMD.io**: https://hackmd.io/7uB6FuEqQAOp_-blPGykzA
 * **When**: Fridays at 11:00UTC (*See your timezone [here](https://time.is/1100_in_UTC)*).
 * **Zoom Meeting Link**: https://zoom.us/j/91266012072?pwd=373103
